@@ -13,10 +13,21 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 public class CdPlayerTest {
 
     @Autowired
+    private MediaPlayer cdPlayer;
+
+    @Autowired
     private CompactDisc compactDisc;
 
     @Test
-    public void test() {
+    public void testCd() {
         Assert.assertNotNull(compactDisc);
+    }
+
+    @Test
+    public void testPlayer() { Assert.assertNotNull(cdPlayer); }
+
+    @Test
+    public void testMethods() {
+
     }
 }
