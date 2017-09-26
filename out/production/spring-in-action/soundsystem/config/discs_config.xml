@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+ http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean class="soundsystem.disks.MusicDiscV1" id="etherDisc">
+        <constructor-arg index="0" value="Make Them Suffer" />
+        <constructor-arg  index="1" value="Summoning Storms" />
+        <constructor-arg index="2">
+            <list>
+                <value>Ether</value>
+                <value>Blood Moon</value>
+                <value>This time</value>
+                <value>I pretend</value>
+                <value>I know</value>
+                <value>some songs</value>
+                <value>from this CD</value>
+            </list>
+        </constructor-arg>
+    </bean>
+
+    <bean class="soundsystem.disks.MusicDiscV1" id="outerEdgesDisc">
+        <constructor-arg value="Noisia" />
+        <constructor-arg value="Outer Edges" />
+        <constructor-arg>
+            <list>
+                <value>Approach</value>
+                <value>Anomaly</value>
+                <value>Collider</value>
+                <value>Voo Doo</value>
+                <value>Mantra</value>
+                <value>Motion Blur</value>
+                <value>Into Dust</value>
+                <value>Sinkhole</value>
+                <value>Get Deaded</value>
+            </list>
+        </constructor-arg>
+    </bean>
+
+    <bean class="soundsystem.disks.MusicDiscV2" id="chuckDisc">
+        <property name="author" value="Sum41" />
+        <property name="album" value="Chuck" />
+        <property name="tracks">
+            <list>
+                <value>Intro</value>
+                <value>No Reason</value>
+                <value>We're All To Blame</value>
+                <value>Welcome to Hell</value>
+                <value>81</value>
+                <value>No Solution</value>
+            </list>
+        </property>
+    </bean>
+
+</beans>
